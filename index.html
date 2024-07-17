@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eureka7</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles_hdg.css">
-    <link rel="stylesheet" href="css/styles_jjh.css">
-    <link rel="stylesheet" href="css/styles_ljh.css">
-    <link rel="stylesheet" href="css/styles_lmh.css">
-    <link rel="stylesheet" href="css/styles_ssg.css">
+    <link rel="stylesheet" href="css/style_hdg.css">
+    <link rel="stylesheet" href="css/style_jjh.css">
+    <link rel="stylesheet" href="css/style_ljh.css">
+    <link rel="stylesheet" href="css/style_lmh.css">
+    <link rel="stylesheet" href="css/style_ssg.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -25,62 +31,73 @@
         </div>
 
         <div class="slide"> <!--body 라고 생각해주시면 됩니다. -->
-            <h1>팀소개</h1>ㅎ
+            <h1>팀소개</h1>
         </div>
 
         <div class="slide"> <!--body 라고 생각해주시면 됩니다. -->
-            <h1>팀원 소개</h1>
-            <div><img id="teamImage" src="..." alt="팀 단체사진">합성사진</div><!--다같이 들어간 합성사진-->
-            <div class="teamIntroduce">간략한 인사말</div>
-            <div><!--팀원 각자 이미지 및 짤막한 소개글-->
-                <div class="teamSelfImage"> <!--팀개인사진및 짤막한 소개글-->
-                    <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="팀원사진">
-                            <div class="card-body">
-                                <h5 class="card-title">팀장</h5>
-                                <p class="card-text">소개말</p>
-                            </div>
+
+            <div class="intro">
+                <div class="introTitle">
+                    <h1 class="teamtitle">팀원 소개</h1>
+                </div>
+                <div class="introMiddle">
+                    <div class="introImage"><!--다같이 들어간 합성사진-->
+                        <img id="teamImage" src="..." alt="팀 단체사진">합성사진
+                    </div>
+                    <div class="teamIntroduce">
+                        간략한 인사말
+                    </div>
+                </div>
+            </div>
+
+            <div class="teamSelfIntro"> <!--팀 개인사진 및 짤막한 소개글-->
+                <div class="selfCard">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="팀원사진">
+                        <div class="card-body">
+                            <h5 class="card-title">팀장</h5>
+                            <p class="card-text">소개말</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="팀원사진">
-                            <div class="card-body">
-                                <h5 class="card-title">팀원1</h5>
-                                <p class="card-text">소개말</p>
-                            </div>
+                </div>
+                <div class="selfCard">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="팀원사진">
+                        <div class="card-body">
+                            <h5 class="card-title">팀원1</h5>
+                            <p class="card-text">소개말</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="팀원사진">
-                            <div class="card-body">
-                                <h5 class="card-title">팀원 2</h5>
-                                <p class="card-text">소개말</p>
-                            </div>
+                </div>
+                <div class="selfCard">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="팀원사진">
+                        <div class="card-body">
+                            <h5 class="card-title">팀원 2</h5>
+                            <p class="card-text">소개말</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="팀원사진">
-                            <div class="card-body">
-                                <h5 class="card-title">팀원 3</h5>
-                                <p class="card-text">소개말</p>
-                            </div>
+                </div>
+                <div class="selfCard">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="팀원사진">
+                        <div class="card-body">
+                            <h5 class="card-title">팀원 3</h5>
+                            <p class="card-text">소개말</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="팀원사진">
-                            <div class="card-body">
-                                <h5 class="card-title">팀원 4</h5>
-                                <p class="card-text">소개말</p>
-                            </div>
+                </div>
+                <div class="selfCard">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="팀원사진">
+                        <div class="card-body">
+                            <h5 class="card-title">팀원 4</h5>
+                            <p class="card-text">소개말</p>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="detailIntroduce"><!--팀원 상세소개페이지(토글작동)-->
                 <div>
                     <img id="invi-image" src="..." alt="팀원상세사진">
@@ -89,6 +106,7 @@
                     상세소개글
                 </div>
             </div>
+
         </div>
 
         <div class="slide">
@@ -106,7 +124,7 @@
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div class="col">
                               <div class="card h-100">
-                                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                                <img src="..." class="card-img-top" alt="...">
                                 <div class="card-body">
                                   <h5 class="card-title">브라움</h5>
                                   <p class ="card-text py-6">서폿1</p>
@@ -149,6 +167,9 @@
 
         <div class="slide"> <!--body 라고 생각해주시면 됩니다. -->
             <h1>방명록</h1>
+            <input id="test_input" type="text">
+            <button id="test" type="button" class="btn btn-primary">Primary</button>
+            <div class="test1" id="test_area">d</div>
         </div>
 
     </div>
@@ -157,8 +178,11 @@
         <button class="button" id="nextBtn"></button> <!-- 이동 버튼 -->
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/slides.js"></script>
     <script type="module" src="js/fcKoTime.js"></script>
+    <script type="module" src="js/FirestoreDB.js"></script>
+
+
 </body>
 
 </html>
