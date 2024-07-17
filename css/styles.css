@@ -61,11 +61,11 @@ body, html {
 }
 
 #prevBtn {
-    background-image: url('img/prev.png'); /* 이전 버튼 이미지 경로 */
+    background-image: url('../img/prev.png'); /* 이전 버튼 이미지 경로 */
 }
 
 #nextBtn {
-    background-image: url('img/next.png'); /* 다음 버튼 이미지 경로 */
+    background-image: url('../img/next.png'); /* 다음 버튼 이미지 경로 */
 }
 
 .hidden {
