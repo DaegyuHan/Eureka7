@@ -15,12 +15,15 @@
   text-align: center;
 }
 
-.introMiddle {
+.intro-Mid {
+  background-color: gray;
   width: 1000px;
   height: 300px;
-  margin: 0 auto;
+}
 
-  background-color: black;
+.picIntro {
+  background-color: orange;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
@@ -35,7 +38,3 @@
   height: 100px;
   background-color: yellow;
 }
-
-.teamselfIntro {}
-
-.detailIntroduce {}
