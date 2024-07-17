@@ -1,40 +1,79 @@
-.intro {
-  background-color: green;
+.total {
   width: 1920px;
   height: 1080px;
 }
 
-.intro-top {
-  width: 100%;
-  height: 200px;
-  outline: dashed 1px black;
-  margin: 0 auto
+.white {
+  height: 30px;
+  background-color: white;
 }
 
-.teamtitle {
+.intro-top {
+  height: 330px;
+  background-color: yellow;
+}
+
+.intro-mid {
+  height: 330px;
+  background-color: blue;
+}
+
+.intro-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  height: 330px;
+  background-color: skyblue;
+}
+
+.intro-title {
   text-align: center;
 }
 
-.intro-Mid {
-  background-color: gray;
-  width: 100%;
-  height: 300px;
-}
-
-.picIntro {
-  background-color: orange;
-  margin: 0 auto;
+.image-introduce {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 100px;
+  background-color: green;
+  height: 280px;
 }
 
-.introImage {
-  height: 100px;
-  background-color: yellow;
+.intro-image {
+  width: 500px;
+  height: 275px;
+  background-color: grey;
+  border-radius: 10px;
 }
 
-.teamIntroduce {
-  height: 100px;
-  background-color: yellow;
+.intro-duce {
+  width: 500px;
+  height: 275px;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.card {
+  width: 330px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.card-img-top {
+  width: 300px;
+  height: 160px;
+  border-radius: 7px;
+}
+
+.bottom-image {
+  width: 500px;
+  height: 330px;
+  background-color: grey;
+  border-radius: 7px;
+}
+
+.bottom-intro {
+  width: 500px;
+  height: 330px;
+  background-color: grey;
+  border-radius: 7px;
 }
