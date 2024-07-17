@@ -4,7 +4,7 @@
   height: 500px;
 }
 
-.introTitle {
+.intro-top {
   width: 350px;
   height: 200px;
   outline: dashed 1px black;
@@ -16,6 +16,11 @@
 }
 
 .introMiddle {
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+
+  background-color: black;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
