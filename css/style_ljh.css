@@ -1,0 +1,9 @@
+#logoSlide {
+    transition: background-color 1s;
+    background-color: black; /* 기본 배경색 */
+}
+
+#logoImg {
+    transition: filter 1s;
+    margin: -36px 0px 0px 0px; 
+}
