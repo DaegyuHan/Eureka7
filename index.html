@@ -14,7 +14,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
 </head>
@@ -33,134 +34,212 @@
         </div>
 
         <div class="slide"> <!--body 라고 생각해주시면 됩니다. -->
-
-            <div class="intro">
-                <div class="introTitle">
-                    <h1 class="teamtitle">팀원 소개</h1>
-                </div>
-                <div class="introMiddle">
-                    <div class="introImage"><!--다같이 들어간 합성사진-->
-                        <img id="teamImage" src="..." alt="팀 단체사진">합성사진
+            <div class="total">
+                <div class="white"></div>
+                <div class="intro-top">
+                    <div class="intro-title">
+                        <h1>팀원 소개</h1>
                     </div>
-                    <div class="teamIntroduce">
-                        간략한 인사말
+                    <div class="image-intro">
+                        <div class="intro-image">
+                            <img id="team-image" src="..." alt="팀 단체사진">
+                        </div>
+                        <div class="intro-duce">
+                            간략한 인사말
+                        </div>
+                    </div>
+                </div>
+
+                <div class="white"></div>
+
+                <div class="intro-mid">
+                    <div class="row row-cols-1 row-cols-md-5 g-1">
+                        <div class="col">
+                            <div class="card">
+                                <img src="data:image/jpeg;base64,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"
+                                    class="card-img-top" alt="개인사진">
+                                <div class="card-body">
+                                    <h5 class="card-title">이름</h5>
+                                    <p class="card-text">간략한 소개내용</p>
+                                    <a href="#" class="btn btn-primary">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="개인사진">
+                                <div class="card-body">
+                                    <h5 class="card-title">이름</h5>
+                                    <p class="card-text">간략한 소개내용</p>
+                                    <a href="#" class="btn btn-primary">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="개인사진">
+                                <div class="card-body">
+                                    <h5 class="card-title">이름</h5>
+                                    <p class="card-text">간략한 소개내용</p>
+                                    <a href="#" class="btn btn-primary">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="개인사진">
+                                <div class="card-body">
+                                    <h5 class="card-title">이름</h5>
+                                    <p class="card-text">간략한 소개내용</p>
+                                    <a href="#" class="btn btn-primary">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="개인사진">
+                                <div class="card-body">
+                                    <h5 class="card-title">이름</h5>
+                                    <p class="card-text">간략한 소개내용</p>
+                                    <a href="#" class="btn btn-primary">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="white"></div>
+
+                <div class="intro-bottom">
+                    <div class="bottom-image">
+                        <img id="personal-image" src="..." alt="개인사진">
+                    </div>
+                    <div class="bottom-intro">
+                        <p>개인 소개내용</p>
                     </div>
                 </div>
             </div>
 
-            <div class="teamSelfIntro"> <!--팀 개인사진 및 짤막한 소개글-->
-                <div class="selfCard">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="팀원사진">
-                        <div class="card-body">
-                            <h5 class="card-title">팀장</h5>
-                            <p class="card-text">소개말</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="selfCard">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="팀원사진">
-                        <div class="card-body">
-                            <h5 class="card-title">팀원1</h5>
-                            <p class="card-text">소개말</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="selfCard">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="팀원사진">
-                        <div class="card-body">
-                            <h5 class="card-title">팀원 2</h5>
-                            <p class="card-text">소개말</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="selfCard">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="팀원사진">
-                        <div class="card-body">
-                            <h5 class="card-title">팀원 3</h5>
-                            <p class="card-text">소개말</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="selfCard">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="팀원사진">
-                        <div class="card-body">
-                            <h5 class="card-title">팀원 4</h5>
-                            <p class="card-text">소개말</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="detailIntroduce"><!--팀원 상세소개페이지(토글작동)-->
-                <div>
-                    <img id="invi-image" src="..." alt="팀원상세사진">
-                </div>
-                <div class="introduce-text">
-                    상세소개글
-                </div>
-            </div>
 
         </div>
 
         <div class="slide">
             <div>
                 <h1 id="minhyuck">추억 앨범</h1>
-                <div class ="min">
-                    <p>위 가장 큰 틀</p> 
+                <div class="min">
+                    <p>위 가장 큰 틀</p>
                     <div>
-                        위쪽 큰 박스
-                    </div> 
+                <div class="albumtop" >
+                    <h1 class ="albumtitle">추억 앨범</h1>
                 </div>
-                <div clsss ="hyuck">
+                <div class="mytitle">
+                    <div class="mytextbox"></div>
+
+                    <button class="blockbtn">
+                        제어창??
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                            class="button" alt="...">
+                    </button>
+                    
+                        위쪽 큰 박스
+                    </div>
+                    </div>
+                </div>
+                <div clsss="hyuck">
+                <div class="mytable">
                     <p>아래 가장 큰 박스</p>
                     <div class="mycards">
                         <div class="row row-cols-1 row-cols-md-5 g-4">
                             <div class="col">
-                              <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">브라움</h5>
-                                  <p class ="card-text py-6">서폿1</p>
+                                <div class="card h-100">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">브라움</h5>
+                                        <p class="card-text py-6">서폿1</p>
+                                    </div>
                                 </div>
-                              </div>
+                                <div class="card h-100">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">사진명</h5>
+                                        <p class="card-text py-6">날짜</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col">
-                              <div class="card h-100">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">파이크</h5>
-                                  <p class="card-text">서폿2</p>
+                                <div class="card h-100">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">팀원1</h5>
+                                        <p class="card-text">사진 설명</p>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
                             <div class="col">
-                              <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                <div class="card h-100">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">파이크</h5>
+                                        <p class="card-text">서폿2</p>
+                                    </div>
                                 </div>
-                              </div>
+                                <div class="card h-100">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col">
-                              <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card h-100">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content.</p>
+                                    </div>
                                 </div>
-                              </div>
+                                <div class="card h-100">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card h-100">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div> <!--body 라고 생각해주시면 됩니다. -->
-            
+
+
         </div>
 
         <div class="slide"> <!--body 라고 생각해주시면 됩니다. -->
