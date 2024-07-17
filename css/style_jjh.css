@@ -1,74 +1,40 @@
-.total {
-  width: 1920px;
-  height: 1080px;
-}
-
-.white {
-  height: 30px;
-  background-color: white;
+.intro {
+  background-color: green;
+  width: 10%;
+  height: 100%;
 }
 
 .intro-top {
-  height: 330px;
-  background-color: yellow;
+  width: 100%;
+  height: 200px;
+  outline: dashed 1px black;
+  margin: 0 auto
 }
 
-.intro-mid {
-  height: 330px;
-  background-color: blue;
-}
-
-.intro-bottom {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
-  height: 330px;
-  background-color: skyblue;
-}
-
-.intro-title {
+.teamtitle {
   text-align: center;
 }
 
-.image-intro {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
-  background-color: green;
-  height: 280px;
-}
-
-.intro-image {
-  width: 500px;
-  height: 275px;
-  background-color: grey;
-}
-
-.intro-duce {
-  width: 500px;
-  height: 275px;
-  background-color: grey;
-}
-
-.card {
-  width: 330px;
+.intro-Mid {
+  background-color: gray;
+  width: 100%;
   height: 300px;
 }
 
-.card-img-top {
-  width: 300px;
-  height: 160px;
-  border-radius: 3px;
+.picIntro {
+  background-color: orange;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
 }
 
-.bottom-image {
-  width: 500px;
-  height: 330px;
-  background-color: grey;
+.introImage {
+  height: 100px;
+  background-color: yellow;
 }
 
-.bottom-intro {
-  width: 500px;
-  height: 330px;
-  background-color: grey;
+.teamIntroduce {
+  height: 100px;
+  background-color: yellow;
 }
