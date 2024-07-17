@@ -55,6 +55,11 @@ body, html {
     background-position: center;
 }
 
+#logoImg {
+    width: 600px;
+    height: 400px;
+}
+
 #prevBtn {
     background-image: url('../img/prev.png'); /* 이전 버튼 이미지 경로 */
 }
