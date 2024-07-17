@@ -1,0 +1,36 @@
+.intro {
+  background-color: green;
+  width: 1000px;
+  height: 500px;
+}
+
+.introTitle {
+  width: 350px;
+  height: 200px;
+  outline: dashed 1px black;
+  margin: 0 auto
+}
+
+.teamtitle {
+  text-align: center;
+}
+
+.introMiddle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.introImage {
+  height: 100px;
+  background-color: yellow;
+}
+
+.teamIntroduce {
+  height: 100px;
+  background-color: yellow;
+}
+
+.teamselfIntro {}
+
+.detailIntroduce {}
