@@ -24,10 +24,12 @@
     margin: 0px 100px 0px 100px ;
     background-color: orange;
 }
+.col{
+    margin:0 auto;
+}
 
 .blockbtn{
     width: 100px;
     height: 200px;
    background-color: red;
 }
-
