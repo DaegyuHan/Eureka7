@@ -19,17 +19,16 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 
-$("#test").click(async function () {
-    alert('확인');
-    // let test = $('#test_input').val();
+// $("#test").click(async function () {
+//     let test = $('#test_input').val();
 
-    // let doc = {
-    //     'test': test
-    // };
-    // await addDoc(collection(db, "test"), doc);
-    // alert('저장완료!');
-    // window.location.reload();
-})
+//     let doc = {
+//         'test': test
+//     };
+//     await addDoc(collection(db, "test"), doc);
+//     alert('저장완료!');
+//     window.location.reload();
+// })
 
 
 // let docs = await getDocs(collection(db, "test"));
