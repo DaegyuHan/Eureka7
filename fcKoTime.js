@@ -1,6 +1,6 @@
 export async function koreaTime() {
     try {
-        const response = await fetch('https://worldtimeapi.org/api/timezone/Asia/Seoul');
+        const response = await fetch('https://worldtimeapi.org/api/timezone/Asia/Seoul'); // HTTPS 사용
         if (!response.ok) {
             throw new Error('인터넷 연결이 원활하지 않습니다.');
         }
