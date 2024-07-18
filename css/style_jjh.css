@@ -1,47 +1,47 @@
+/*전체페이지*/
 .total {
   width: 1920px;
   height: 1080px;
+  background-color: #141c1d;
 }
 
+/*페이지여백*/
 .white {
-  height: 30px;
-  background-color: white;
+  height: 20px;
+  background-color: #141c1d;
 }
 
+/*상단*/
 .intro-top {
   height: 330px;
-  background-color: yellow;
 }
 
-.intro-mid {
-  height: 330px;
-  background-color: blue;
-  font-family: "Dongle", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+/*상단 타이틀*/
 .intro-title {
   text-align: center;
   font-family: "Nanum Pen Script", cursive;
   font-weight: 400;
   font-style: normal;
+  color: white;
 }
 
+/*이미지 소개글 div*/
 .image-introduce {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 100px;
-  background-color: green;
   height: 280px;
 }
 
+/*팀 이미지*/
 .team-image {
   width: 500px;
   height: 275px;
   border-radius: 50px;
+  margin: 0px 0px 0px 410px;
 }
 
+/*팀 소개글*/
 .team-introduce {
   width: 500px;
   height: 275px;
@@ -54,27 +54,55 @@
   font-style: normal;
 }
 
-.card-intro {
-  width: 330px;
-  height: 300px;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.card-img-top {
-  width: 300px;
-  height: 160px;
-  border-radius: 10px;
-}
-
-.intro-bottom {
+/*중단*/
+.intro-mid {
   height: 330px;
-  background-color: skyblue;
   font-family: "Dongle", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/*카드전체 div*/
+.card-bodyj {
+  width: 1920px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0px 0px 0px 30px;
+}
+
+/*카드단일 div*/
+.card-intro {
+  width: 330px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: mili
+}
+
+/*카드이미지칸*/
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/*카드 이미지*/
+.psl-img {
+  width: 330px;
+  height: 160px;
+  overflow: hidden;
+}
+
+/*하단*/
+.intro-bottom {
+  height: 330px;
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*하단 개인이미지*/
 .bottom-image {
   width: 500px;
   height: 330px;
@@ -82,24 +110,36 @@
   border-radius: 10px;
 }
 
+#personal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/*하단 개인상세소개내용*/
 .bottom-intro {
   width: 500px;
   height: 330px;
-  background-color: grey;
+  background-color: beige;
   border-radius: 10px;
 }
 
+/*하단 감추기*/
 .toggle-content {
   display: none;
 }
 
+/*하단 그리드 및 위치*/
 .content-grid {
   position: absolute;
   display: none;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 100px;
+  margin: 0px 0px 0px 410px;
 }
 
+/*버튼 마우스 모양 변경*/
 #intro-btn {
   cursor: pointer;
 }
