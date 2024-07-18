@@ -35,10 +35,21 @@
 
 
 .mycards {
- width: 100%
+
+ width: 1020px;
+ position:absolute;
+ margin-left: 20px;
+
+ 
+ 
     
     
    
+}
+
+.cardimage{
+    
+    height: 100px;
 }
 
 .blockbtn {
