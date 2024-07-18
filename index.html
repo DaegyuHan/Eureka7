@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eureka7</title>
-    <link rel="icon" type="image/png" sizes="512x512"
-    href="img/logo.PNG">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/logo.PNG">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style_hdg.css">
     <link rel="stylesheet" href="css/style_jjh.css">
@@ -64,25 +63,23 @@
                     </div>
                     <div class="teamintro-bottom1-text2">
                         MBTI N 20대 후반<br>
-
                         남성 군필자<br>
-
                         앞머리 잡아당기면 눈썹 닿음 <br>
-                        삼겹살을 좋아함
+                        삼겹살을 좋아합니다요
                     </div>
                 </div>
                 <div class="teamintro-bottom2">
                     <div class="teamintro-bottom2-text1">
-                    <div class="teamintro-bottom2-font">유레카 세븐 팀원들의<br>약속을 확인하세요</div>
+                        <div class="teamintro-bottom2-font">유레카 세븐 팀원들의<br>약속을 확인하세요</div>
+                    </div>
+                    <div class="teamintro-bottom2-text2">
+                        점심 저녁은 12시 18시에 먹어요 <br>
+                        모르는 부분이 생기면 팀원에게 물어봐요 <br>
+                        본인 파트가 아니어도 적극적으로 참여해요 <br>
+                        자리를 좀 오래 비운다면 춤추기 리액션을 해놨어요 <br>
+                        불참석 또는 지각 시 카톡방에 공유해요
+                    </div>
                 </div>
-                <div class="teamintro-bottom2-text2">
-                    점심 저녁은 12시 18시에 먹어요 <br>
-                    모르는 부분이 생기면 팀원에게 물어봐요 <br>
-                    본인 파트가 아니어도 적극적으로 참여해요 <br>
-                    자리를 좀 오래 비운다면 춤추기 리액션을 해놨어요 <br>
-                    불참석 또는 지각 시 카톡방에 공유해요
-                </div>
-            </div>
             </div>
         </div>
 
@@ -114,7 +111,8 @@
                                 <div class="card-body">
                                     <h5 class="card-title">이름</h5>
                                     <p class="card-text">간략한 소개내용</p>
-                                    <button onclick="openclose()" type="button" class="btn btn-primary">자세히 보기</button>
+                                    <button id="intro-btn" data-target="content1" type="button"
+                                        class="btn btn-primary">자세히 보기</button>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +122,8 @@
                                 <div class="card-body">
                                     <h5 class="card-title">이름</h5>
                                     <p class="card-text">간략한 소개내용</p>
-                                    <a href="#" class="btn btn-primary">자세히 보기</a>
+                                    <button id="intro-btn" data-target="content2" type="button"
+                                        class="btn btn-primary">자세히 보기</button>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +133,8 @@
                                 <div class="card-body">
                                     <h5 class="card-title">이름</h5>
                                     <p class="card-text">간략한 소개내용</p>
-                                    <a href="#" class="btn btn-primary">자세히 보기</a>
+                                    <button id="intro-btn" data-target="content3" type="button"
+                                        class="btn btn-primary">자세히 보기</button>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,8 @@
                                 <div class="card-body">
                                     <h5 class="card-title">이름</h5>
                                     <p class="card-text">간략한 소개내용</p>
-                                    <a href="#" class="btn btn-primary">자세히 보기</a>
+                                    <button id="intro-btn" data-target="content4" type="button"
+                                        class="btn btn-primary">자세히 보기</button>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +155,8 @@
                                 <div class="card-body">
                                     <h5 class="card-title">이름</h5>
                                     <p class="card-text">간략한 소개내용</p>
-                                    <a href="#" class="btn btn-primary">자세히 보기</a>
+                                    <button id="intro-btn" data-target="content5" type="button"
+                                        class="btn btn-primary">자세히 보기</button>
                                 </div>
                             </div>
                         </div>
@@ -163,12 +165,46 @@
 
                 <div class="white"></div>
 
-                <div class="intro-bottom" id='intro-bottombtn'>
-                    <div class="bottom-image">
-                        <img id="personal-image" src="..." alt="개인사진">
+                <div class="intro-bottom" id='intro-bottomtog'>
+                    <div class="toggle-content content-grid" id="content1">
+                        <div class="bottom-image">
+                            <img id="personal-image" src="..." alt="개인사진">
+                        </div>
+                        <div class="bottom-intro">
+                            <p>개인 소개내용1</p>
+                        </div>
                     </div>
-                    <div class="bottom-intro">
-                        <p>개인 소개내용</p>
+                    <div class="toggle-content content-grid" id="content2">
+                        <div class="bottom-image">
+                            <img id="personal-image" src="..." alt="개인사진">
+                        </div>
+                        <div class="bottom-intro">
+                            <p>개인 소개내용2</p>
+                        </div>
+                    </div>
+                    <div class="toggle-content content-grid" id="content3">
+                        <div class="bottom-image">
+                            <img id="personal-image" src="..." alt="개인사진">
+                        </div>
+                        <div class="bottom-intro">
+                            <p>개인 소개내용3</p>
+                        </div>
+                    </div>
+                    <div class="toggle-content content-grid" id="content4">
+                        <div class="bottom-image">
+                            <img id="personal-image" src="..." alt="개인사진">
+                        </div>
+                        <div class="bottom-intro">
+                            <p>개인 소개내용4</p>
+                        </div>
+                    </div>
+                    <div class="toggle-content content-grid" id="content5">
+                        <div class="bottom-image">
+                            <img id="personal-image" src="..." alt="개인사진">
+                        </div>
+                        <div class="bottom-intro">
+                            <p>개인 소개내용5</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -185,37 +221,41 @@
                         </div>
                         <div class="mytitle"> 위쪽 큰 박스
                             <button type="button" class="btn btn-dark" id="togglebtn">사진 토글</button>
-                            
+
                             <div class="mypostingbox">사진 추가하는 박스
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-text" id="photoname">사진 이름</span>
-                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                                  </div>
-                                  <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-lg">
+                                </div>
+                                <div class="input-group input-group-lg">
                                     <span class="input-group-text" id="phototext">사진 설명</span>
-                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                                  </div>
-                                  <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-lg">
+                                </div>
+                                <div class="input-group input-group-lg">
                                     <span class="input-group-text" id="photourl">사진 주소</span>
-                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                                  </div>
-                                  
-                               
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-lg">
+                                </div>
+
+
                                 <button type="button" class="btn btn-secondary btn-lg" id="postingbtn">사진 저장</button>
                             </div>
 
-                                                        
+
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="mytable">아래 가장 큰 박스
-                        
+
                         <div class="mycards" id="cardbox">
                             <div class="row row-cols-1 row-cols-md-5 g-4">
                                 <div class="col">
                                     <div class="card">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s" class="card-img-top" alt="...">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                            class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">사진명</h5>
                                             <p class="card-text py-6">날짜</p>
