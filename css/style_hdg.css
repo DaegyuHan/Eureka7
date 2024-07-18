@@ -8,7 +8,6 @@
     margin-left: 5%;
     background-color: rgb(247, 247, 247);
     /* border: 1px solid rgb(177, 176, 176); */
-    border-radius: 5px;
     font-family: "Dongle", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -50,6 +49,7 @@
     opacity: 0.1;
     /* 반투명 설정 */
     z-index: 1;
+    border-radius: 5px;
 }
 
 .teamintro-middle-content {
@@ -93,8 +93,6 @@
 .teamintro-bottom1:hover {
     background-color: #141c1d;
     color: white;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
 .teamintro-bottom1:hover .teamintro-bottom1-text1 {
@@ -126,7 +124,7 @@
     transition: background-color 0.3s;
     background-color: #141c1d;
     color: white;
-
+    cursor: pointer;
 }
 
 .teamintro-bottom2-font {
@@ -141,10 +139,8 @@
 }
 
 .teamintro-bottom2:hover {
-    background-color: rgb(247, 247, 247);
-    color: black;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    background-color: #141c1d;
+    color: white;
 }
 
 .teamintro-bottom2:hover .teamintro-bottom2-text1 {
