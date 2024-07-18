@@ -65,7 +65,7 @@
                         MBTI N 20대 후반<br>
                         남성 군필자<br>
                         앞머리 잡아당기면 눈썹 닿음 <br>
-                        삼겹살 좋아함
+                        삼겹살을 좋아함
                     </div>
                 </div>
                 <div class="teamintro-bottom2">
@@ -224,116 +224,162 @@
                 </div>
             </div>
         </div>
-
-        <div class="slide" style="background-color: #141c1d;"> <!--body 라고 생각해주시면 됩니다. -->
+        <div class="slide"> <!--body 라고 생각해주시면 됩니다. -->
             <div class="hdg-album-main">
                 <div>
-                    <div class="albumtop">
-                        <h1 class="albumtitle" style="color: white;">추억 앨범</h1>
-                    </div>
-                    <div class="mytitle">
-                        <div class="hdg-photo-toggle-area">
-                            <button type="button" class="btn btn-dark" id="togglebtn">사진 숨기기</button>
+                    <div>
+                        <div class="albumtop">
+                            <h1 class="albumtitle">추억 앨범</h1>
                         </div>
-                        <div class="mypostingbox">
-                            <div class="input-group input-group-lg">
-                                <span class="input-group-text">사진 이름</span>
-                                <input id="photoname" type="text" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-lg">
+                        <div class="mytitle">
+                            <div class="hdg-photo-toggle-area">
+                                <button type="button" class="btn btn-dark" id="togglebtn">사진 토글</button>
                             </div>
-                            <div class="input-group input-group-lg">
-                                <span class="input-group-text">사진 설명</span>
-                                <input id="phototext" type="text" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-lg">
+                            <div class="mypostingbox">사진 추가하는 박스
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text">사진 이름</span>
+                                    <input id="photoname" type="text" class="form-control"
+                                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                                </div>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text">사진 설명</span>
+                                    <input id="phototext" type="text" class="form-control"
+                                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                                </div>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text">사진 주소</span>
+                                    <input id="photourl" type="text" class="form-control"
+                                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                                </div>
+                                <button onclick="makecard()" type="button" class="btn btn-secondary btn-lg"
+                                    id="postingbtn">사진 저장</button>
                             </div>
-                            <div class="input-group input-group-lg">
-                                <span class="input-group-text">사진 주소</span>
-                                <input id="photourl" type="text" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-lg">
-                            </div>
-
-                            <button onclick="makecard()" type="button" class="btn btn-secondary btn-lg"
-                                id="postingbtn">사진 저장</button>
                         </div>
                     </div>
                 </div>
-                <div class="cardcase">
-                    <div class="mycards">
-                        <div id="cardbox" class="row row-cols-1 row-cols-md-5 g-4">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">사진명</h5>
-                                        <p class="card-text py-6">날짜</p>
+                <div>
+                    <div class="mytable">아래 가장 큰 박스
+                        <div class="mycards">
+                            <div id="cardbox" class="row row-cols-1 row-cols-md-5 g-4">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">사진명</h5>
+                                            <p class="card-text py-6">날짜</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">팀원1</h5>
-                                        <p class="card-text">사진 설명</p>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">팀원1</h5>
+                                            <p class="card-text">사진 설명</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">팀원2</h5>
-                                        <p class="card-text">날짜</p>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">팀원2</h5>
+                                            <p class="card-text">날짜</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">팀원2</h5>
-                                        <p class="card-text">날짜</p>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">팀원2</h5>
+                                            <p class="card-text">날짜</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">팀원2</h5>
-                                        <p class="card-text">날짜</p>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">팀원2</h5>
+                                            <p class="card-text">날짜</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">팀원2</h5>
-                                        <p class="card-text">날짜</p>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">팀원2</h5>
+                                            <p class="card-text">날짜</p>
+                                        </div>
                                     </div>
                                 </div>
-
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">팀원1</h5>
+                                            <p class="card-text">사진 설명</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">팀원2</h5>
+                                            <p class="card-text">날짜</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">팀원2</h5>
+                                            <p class="card-text">날짜</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">팀원2</h5>
+                                            <p class="card-text">날짜</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">팀원2</h5>
+                                            <p class="card-text">날짜</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
 
-<<<<<<< HEAD
-
-        <div class="slide"> <!--body 라고 생각해주시면 됩니다. -->
-            <h1>방명록</h1>
-=======
         <div class="slide visitor-main"> <!--body 라고 생각해주시면 됩니다. -->
+            <div class="visitor-container">
             <h1>방 명 록</h1>
     
             <form id="guestbook-form">
@@ -349,8 +395,8 @@
             <div id="guestbook-entries">
                 // 여기에 방
             </div>
->>>>>>> a8c5a4935125f26abd19523f670e87e88f4bba40
         </div>
+    </div>
     </div>
 
     <div class="buttons">
