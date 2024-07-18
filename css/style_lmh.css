@@ -17,7 +17,7 @@
 }
 
 .mypostingbox {
-    background-color: red;
+    background-color: gold;
     width: 500px;
     margin: 30px auto 30px auto;
     padding: 20px;
@@ -62,7 +62,8 @@
     width: 11%;
     background-color: lightyellow;
     margin-left: 4%;
-    height: 100%;
+    height: 1080px;
+    
 }
 
 .hdg-photo-toggle-area {
