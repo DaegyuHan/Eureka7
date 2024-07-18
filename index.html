@@ -378,8 +378,22 @@
             </div>
         </div>
 
-        <div class="slide"> <!--body 라고 생각해주시면 됩니다. -->
-            <h1>방명록</h1>
+        <div class="slide visitor-main"> <!--body 라고 생각해주시면 됩니다. -->
+            <h1>방 명 록</h1>
+    
+            <form id="guestbook-form">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="message">메시지:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">등록</button>
+            </form>
+            
+            <div id="guestbook-entries">
+                // 여기에 방
+            </div>
         </div>
     </div>
 
@@ -393,6 +407,7 @@
     <script type="module" src="js/FirestoreDB.js"></script>
     <script src="js/member.js"></script>
     <script src="js/photo.js"></script>
+    <script src="js/visitor.js"></script>
 
 
 </body>
