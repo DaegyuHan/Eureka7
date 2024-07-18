@@ -15,20 +15,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Nanum+Pen+Script&display=swap');
+    </style>
 
 </head>
 
 <body>
     <div class="slider" id="slider">
 
-        <div id="logoSlide" class="slide"> <!--로고 -->
+        <div onclick="" id="logoSlide" class="slide"> <!--로고 -->
             <div>
                 <img id="logoImg" src="img/logo.PNG" alt="logo">
             </div>
         </div>
 
-        <div class="slide"> <!-- 팀소개 -->
+        <div style="background-color: #141c1d;" class="slide"> <!-- 팀소개 -->
             <div class="teamintro-main">
                 <div class="teamintro-title">
                     <div class="teamintro-title-font">Introduce</div>
@@ -54,13 +57,16 @@
                     </div>
                 </div>
                 <div class="teamintro-bottom1">
-                    <div class="teamintro-bottom1-text1">팀원 특징</div>
+                    <div class="teamintro-bottom1-text1">
+                        <div class="teamintro-bottom1-font">유레카 세븐 팀원들의<br>공통점은 뭘까요?</div>
+                    </div>
                     <div class="teamintro-bottom1-text2">
                         MBTI N 이다 <br>
                         20대 후반이다 <br>
                         남성이다 <br>
                         군필자다 <br>
-                        앞머리 잡아당기면 눈썹 닿음
+                        앞머리 잡아당기면 눈썹 닿음 <br>
+                        삼겹살을 좋아함
                     </div>
                 </div>
                 <div class="teamintro-bottom2">약속</div>
@@ -74,11 +80,11 @@
                     <div class="intro-title">
                         <h1>팀원 소개</h1>
                     </div>
-                    <div class="image-intro">
+                    <div class="image-introduce">
                         <div class="intro-image">
                             <img id="team-image" src="..." alt="팀 단체사진">
                         </div>
-                        <div class="teamIntroduce">
+                        <div class="team-introduce">
                             간략한 인사말
                         </div>
                     </div>
@@ -95,7 +101,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">이름</h5>
                                     <p class="card-text">간략한 소개내용</p>
-                                    <a href="#" class="btn btn-primary">자세히 보기</a>
+                                    <button onclick="openclose()" type="button" class="btn btn-primary">자세히 보기</button>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +150,7 @@
 
                 <div class="white"></div>
 
-                <div class="intro-bottom">
+                <div class="intro-bottom" id='intro-bottombtn'>
                     <div class="bottom-image">
                         <img id="personal-image" src="..." alt="개인사진">
                     </div>
@@ -245,6 +251,7 @@
     <script src="js/slides.js"></script>
     <script type="module" src="js/fcKoTime.js"></script>
     <script type="module" src="js/FirestoreDB.js"></script>
+    <script src="js/member.js"></script>
 
 
 </body>

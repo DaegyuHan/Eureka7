@@ -9,10 +9,14 @@
     background-color: rgb(247, 247, 247);
     /* border: 1px solid rgb(177, 176, 176); */
     border-radius: 5px;
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .teamintro-title {
     height: 15%;
+    
 }
 
 .teamintro-title-font {
@@ -21,19 +25,24 @@
     margin: 0 auto 0 auto;
     padding-top: 20px;
     border-bottom: 1px solid;
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .teamintro-middle {
     height: 60%;
-    font-size: 17px;
 }
 
 .teamintro-middle-content {
-    padding-top: 40px;
+    padding-top: 0px;
+    font-size: 25px;
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .teamintro-bottom1 {
-    background-color: yellow;
     height: 30%;
     width: 50%;
     float: left;
@@ -42,6 +51,13 @@
     text-align: center;
     position: relative;
     transition: background-color 0.3s;
+    background-color: #141c1d;
+    color: white;
+}
+
+.teamintro-bottom1-font {
+    padding-top: 10%;
+    font-size: 20px;
 }
 
 
@@ -50,7 +66,8 @@
 }
 
 .teamintro-bottom1:hover {
-    background-color: pink;
+    background-color: rgb(247, 247, 247);
+    color: black;
 }
 
 .teamintro-bottom1:hover .teamintro-bottom1-text1 {
