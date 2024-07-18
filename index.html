@@ -223,24 +223,24 @@
                             <button type="button" class="btn btn-dark" id="togglebtn">사진 토글</button>
 
                             <div class="mypostingbox">사진 추가하는 박스
-                                <div class="input-group input-group-lg">
-                                    <span class="input-group-text" id="photoname">사진 이름</span>
-                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                <div class="input-group input-group-lg" >
+                                    <span class="input-group-text" >사진 이름</span>
+                                    <input id="photoname" type="text"  class="form-control" aria-label="Sizing example input"
                                         aria-describedby="inputGroup-sizing-lg">
                                 </div>
-                                <div class="input-group input-group-lg">
-                                    <span class="input-group-text" id="phototext">사진 설명</span>
-                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                <div class="input-group input-group-lg" >
+                                    <span class="input-group-text" >사진 설명</span>
+                                    <input id="phototext" type="text" class="form-control" aria-label="Sizing example input"
                                         aria-describedby="inputGroup-sizing-lg">
                                 </div>
-                                <div class="input-group input-group-lg">
-                                    <span class="input-group-text" id="photourl">사진 주소</span>
-                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                <div class="input-group input-group-lg" >
+                                    <span class="input-group-text" >사진 주소</span>
+                                    <input id="photourl" type="text" class="form-control" aria-label="Sizing example input"
                                         aria-describedby="inputGroup-sizing-lg">
                                 </div>
 
 
-                                <button type="button" class="btn btn-secondary btn-lg" id="postingbtn">사진 저장</button>
+                                <button onclick="makecard()" type="button" class="btn btn-secondary btn-lg" id="postingbtn">사진 저장</button>
                             </div>
 
 
@@ -250,8 +250,8 @@
                 <div>
                     <div class="mytable">아래 가장 큰 박스
 
-                        <div class="mycards" id="cardbox">
-                            <div class="row row-cols-1 row-cols-md-5 g-4">
+                        <div class="mycards" >
+                            <div id="cardbox" class="row row-cols-1 row-cols-md-5 g-4">
                                 <div class="col">
                                     <div class="card">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"

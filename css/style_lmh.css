@@ -1,19 +1,23 @@
-.albumtop{
+
+
+.albumtop {
     width: 1000px;
-    
+
 
     background-color: blue;
 }
-.albumtitle{
-    
-    text-align:center;
+
+.albumtitle {
+
+    text-align: center;
 }
 
-.mytitle{
+.mytitle {
     width: 1000px;
     height: 100%;
     background-color: green;
 }
+
 .mypostingbox {
     width: 500px;
     margin: 30px auto 0px auto;
@@ -23,26 +27,27 @@
     background-color: red;
 }
 
-#postingbtn{
+#postingbtn {
     width: 450px;
-    margin: 5px 0 5px 5px ;
+    margin: 5px 0 5px 5px;
 }
-.mytable{
+
+.mytable {
     background-color: black;
     width: 1000px;
 }
 
-.mycards{
+.mycards {
     width: 1000px;
-    margin-left: 50px;
     background-color: orange;
 }
-.card{
-    width: 200px;
+
+.card {
+    width: 180px;
 }
 
-.blockbtn{
+.blockbtn {
     width: 100px;
     height: 200px;
-   background-color: red;
+    background-color: red;
 }
