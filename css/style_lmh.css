@@ -1,5 +1,5 @@
 .albumtop{
-    width: 1000px;
+    width: 100%;
     
 
     background-color: blue;
@@ -10,8 +10,8 @@
 }
 
 .mytitle{
-    width: 1000px;
-    height: 100%;
+    width: 100%;
+    height: 5%;
     background-color: green;
 }
 .mypostingbox {
@@ -29,12 +29,12 @@
 }
 .mytable{
     background-color: black;
-    width: 1000px;
+    width: 100%;
 }
 
 .mycards{
-    width: 1000px;
-    margin-left: 50px;
+    width: 100%;
+
     background-color: orange;
 }
 .card{
@@ -46,3 +46,26 @@
     height: 200px;
    background-color: red;
 }
+
+
+/*//////////// hdg 작업 /////////////*/
+
+.hdg-album-main {
+    width: 11%;
+    background-color: pink;
+    margin-left: 4%;
+}
+
+.hdg-photo-toggle-area {
+    background-color: skyblue;
+    width: 250px;
+    height: 265px;
+    float: left;
+    text-align: center;
+}
+
+.hdg-photo-toggle-area button {
+    margin-top: 100px;
+}
+
+/* ///////////////////////////////// */
