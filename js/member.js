@@ -1,3 +1,30 @@
 function openclose() {
-  $("#intro-bottombtn").toggle();
+  $("#intro-bottomtog").toggle();
 }
+
+/*
+$("#postingbtn").click(async function () {
+  let image = $("#image").val();
+  let comment = $("#comment").val();
+
+  let doc = {
+    'image': image,
+    'comment': comment
+  };
+  let docs = await getDocs(collection(db, "movies"));
+  docs.forEach((doc) => {
+    let row = doc.data();
+    let image = row['image'];
+    let comment = row['comment'];
+
+    <div class="intro-bottom" id='intro-bottomtog'>
+      <div class="bottom-image">
+        <img id="personal-image" src="${image}" alt="개인사진">
+      </div>
+      <div class="bottom-intro">
+        <p>${comment}개인 소개내용</p>
+      </div>
+    </div>
+    $("#intro-bottomtog").append(temp_html);
+  });
+*/
