@@ -37,7 +37,7 @@
 .team-image {
   width: 500px;
   height: 275px;
-  border-radius: 50px;
+  border-radius: 10px;
   margin: 0px 0px 0px 410px;
 }
 
@@ -45,10 +45,10 @@
 .team-introduce {
   width: 500px;
   height: 275px;
-  background-color: grey;
-  border-radius: grey;
+  background-color: lightyellow;
+  border-radius: 10px;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 10px;
   font-family: "Dongle", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -73,9 +73,9 @@
 /*카드단일 div*/
 .card-intro {
   width: 330px;
-  height: 300px;
+  height: 330px;
   border-radius: 10px;
-  background-color: mili
+  background-color: lightyellow
 }
 
 /*카드이미지칸*/
@@ -83,8 +83,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 /*카드 이미지*/
@@ -92,6 +90,7 @@
   width: 330px;
   height: 160px;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 /*하단*/
@@ -106,7 +105,6 @@
 .bottom-image {
   width: 500px;
   height: 330px;
-  background-color: grey;
   border-radius: 10px;
 }
 
@@ -121,7 +119,11 @@
 .bottom-intro {
   width: 500px;
   height: 330px;
-  background-color: beige;
+  background-color: lightyellow;
+  border-radius: 10px;
+}
+
+#personal-image {
   border-radius: 10px;
 }
 
