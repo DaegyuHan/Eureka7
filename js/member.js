@@ -1,6 +1,8 @@
+/*
 function openclose() {
   $("#intro-bottomtog").toggle();
 }
+*/
 
 /*
 $("#postingbtn").click(async function () {
@@ -28,3 +30,23 @@ $("#postingbtn").click(async function () {
     $("#intro-bottomtog").append(temp_html);
   });
 */
+
+
+document.querySelectorAll('.btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const targetId = button.getAttribute('data-target');
+    const content = document.getElementById(targetId);
+
+    // 모든 토글 콘텐츠를 닫음
+    document.querySelectorAll('.toggle-content').forEach(div => {
+      div.style.display = 'none';
+    });
+
+    // 클릭한 버튼의 토글 콘텐츠를 토글
+    if (content.style.display === 'none' || content.style.display === '') {
+      content.style.display = 'grid';
+    } else {
+      content.style.display = 'none';
+    }
+  });
+});

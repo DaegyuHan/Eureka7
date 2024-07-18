@@ -18,14 +18,6 @@
   background-color: blue;
 }
 
-.intro-bottom {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
-  height: 330px;
-  background-color: skyblue;
-}
-
 .intro-title {
   text-align: center;
 }
@@ -64,6 +56,11 @@
   border-radius: 10px;
 }
 
+.intro-bottom {
+  height: 330px;
+  background-color: skyblue;
+}
+
 .bottom-image {
   width: 500px;
   height: 330px;
@@ -76,4 +73,19 @@
   height: 330px;
   background-color: grey;
   border-radius: 10px;
+}
+
+.toggle-content {
+  display: none;
+}
+
+.content-grid {
+  position: absolute;
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+#intro-btn {
+  cursor: pointer;
 }

@@ -101,7 +101,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">이름</h5>
                                     <p class="card-text">간략한 소개내용</p>
-                                    <button onclick="openclose()" id="intro-btn" type="button"
+                                    <button id="intro-btn" data-target="content1" type="button"
                                         class="btn btn-primary">자세히 보기</button>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">이름</h5>
                                     <p class="card-text">간략한 소개내용</p>
-                                    <button onclick="openclose()" id="intro-btn" type="button"
+                                    <button id="intro-btn" data-target="content2" type="button"
                                         class="btn btn-primary">자세히 보기</button>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">이름</h5>
                                     <p class="card-text">간략한 소개내용</p>
-                                    <button onclick="openclose()" id="intro-btn" type="button"
+                                    <button id="intro-btn" data-target="content3" type="button"
                                         class="btn btn-primary">자세히 보기</button>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">이름</h5>
                                     <p class="card-text">간략한 소개내용</p>
-                                    <button onclick="openclose()" id="intro-btn" type="button"
+                                    <button id="intro-btn" data-target="content4" type="button"
                                         class="btn btn-primary">자세히 보기</button>
                                 </div>
                             </div>
@@ -145,7 +145,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">이름</h5>
                                     <p class="card-text">간략한 소개내용</p>
-                                    <button onclick="openclose()" id="intro-btn" type="button"
+                                    <button id="intro-btn" data-target="content5" type="button"
                                         class="btn btn-primary">자세히 보기</button>
                                 </div>
                             </div>
@@ -156,11 +156,45 @@
                 <div class="white"></div>
 
                 <div class="intro-bottom" id='intro-bottomtog'>
-                    <div class="bottom-image">
-                        <img id="personal-image" src="..." alt="개인사진">
+                    <div class="toggle-content content-grid" id="content1">
+                        <div class="bottom-image">
+                            <img id="personal-image" src="..." alt="개인사진">
+                        </div>
+                        <div class="bottom-intro">
+                            <p>개인 소개내용1</p>
+                        </div>
                     </div>
-                    <div class="bottom-intro">
-                        <p>개인 소개내용</p>
+                    <div class="toggle-content content-grid" id="content2">
+                        <div class="bottom-image">
+                            <img id="personal-image" src="..." alt="개인사진">
+                        </div>
+                        <div class="bottom-intro">
+                            <p>개인 소개내용2</p>
+                        </div>
+                    </div>
+                    <div class="toggle-content content-grid" id="content3">
+                        <div class="bottom-image">
+                            <img id="personal-image" src="..." alt="개인사진">
+                        </div>
+                        <div class="bottom-intro">
+                            <p>개인 소개내용3</p>
+                        </div>
+                    </div>
+                    <div class="toggle-content content-grid" id="content4">
+                        <div class="bottom-image">
+                            <img id="personal-image" src="..." alt="개인사진">
+                        </div>
+                        <div class="bottom-intro">
+                            <p>개인 소개내용4</p>
+                        </div>
+                    </div>
+                    <div class="toggle-content content-grid" id="content5">
+                        <div class="bottom-image">
+                            <img id="personal-image" src="..." alt="개인사진">
+                        </div>
+                        <div class="bottom-intro">
+                            <p>개인 소개내용5</p>
+                        </div>
                     </div>
                 </div>
             </div>
