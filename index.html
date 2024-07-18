@@ -80,11 +80,11 @@
                     <div class="intro-title">
                         <h1>팀원 소개</h1>
                     </div>
-                    <div class="image-intro">
+                    <div class="image-introduce">
                         <div class="intro-image">
                             <img id="team-image" src="..." alt="팀 단체사진">
                         </div>
-                        <div class="teamIntroduce">
+                        <div class="team-introduce">
                             간략한 인사말
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">이름</h5>
                                     <p class="card-text">간략한 소개내용</p>
-                                    <a href="#" class="btn btn-primary">자세히 보기</a>
+                                    <button onclick="openclose()" type="button" class="btn btn-primary">자세히 보기</button>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +150,7 @@
 
                 <div class="white"></div>
 
-                <div class="intro-bottom">
+                <div class="intro-bottom" id='intro-bottombtn'>
                     <div class="bottom-image">
                         <img id="personal-image" src="..." alt="개인사진">
                     </div>
@@ -241,6 +241,7 @@
     <script src="js/slides.js"></script>
     <script type="module" src="js/fcKoTime.js"></script>
     <script type="module" src="js/FirestoreDB.js"></script>
+    <script src="js/member.js"></script>
 
 
 </body>
