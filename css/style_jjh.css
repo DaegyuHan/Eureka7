@@ -35,16 +35,16 @@
 
 /*팀 이미지*/
 .team-image {
-  width: 500px;
-  height: 275px;
+  width: 450px;
+  height: 240px;
   border-radius: 10px;
-  margin: 0px 0px 0px 410px;
+  margin: 0px 0px 0px 460px;
 }
 
 /*팀 소개글*/
 .team-introduce {
-  width: 500px;
-  height: 275px;
+  width: 450px;
+  height: 240px;
   background-color: lightyellow;
   border-radius: 10px;
   text-align: center;
@@ -60,6 +60,7 @@
   font-family: "Dongle", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: -13px 0px 0px 0px;
 }
 
 /*카드전체 div*/
@@ -99,6 +100,7 @@
   font-family: "Dongle", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 20px 0px 0px 0px;
 }
 
 /*하단 개인이미지*/
@@ -110,7 +112,7 @@
 
 #personal-image {
   width: 100%;
-  height: 100%;
+  height: 78%;
   object-fit: cover;
 
 }
@@ -118,7 +120,7 @@
 /*하단 개인상세소개내용*/
 .bottom-intro {
   width: 500px;
-  height: 330px;
+  height: 260px;
   background-color: lightyellow;
   border-radius: 10px;
 }
