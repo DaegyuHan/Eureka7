@@ -65,7 +65,7 @@
                         MBTI N 20대 후반<br>
                         남성 군필자<br>
                         앞머리 잡아당기면 눈썹 닿음 <br>
-                        삼겹살을 좋아합니다
+                        삼겹살을 좋아함
                     </div>
                 </div>
                 <div class="teamintro-bottom2">
@@ -231,35 +231,37 @@
             </div>
 
             <div class="slide"> <!--body 라고 생각해주시면 됩니다. -->
-                <div>
+                <div class="hdg-album-main">
                     <div>
                         <div>
                             <div class="albumtop">
                                 <h1 class="albumtitle">추억 앨범</h1>
                             </div>
-                            <div class="mytitle"> 위쪽 큰 박스
-                                <button type="button" class="btn btn-dark" id="togglebtn">사진 토글</button>
+                            <div class="mytitle">
+                                <div class="hdg-photo-toggle-area">
+                                    <button type="button" class="btn btn-dark" id="togglebtn">사진 토글</button>
+                                </div>
 
                                 <div class="mypostingbox">사진 추가하는 박스
                                     <div class="input-group input-group-lg">
-                                        <span class="input-group-text" id="photoname">사진 이름</span>
-                                        <input type="text" class="form-control" aria-label="Sizing example input"
-                                            aria-describedby="inputGroup-sizing-lg">
+                                        <span class="input-group-text">사진 이름</span>
+                                        <input id="photoname" type="text" class="form-control"
+                                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                                     </div>
                                     <div class="input-group input-group-lg">
-                                        <span class="input-group-text" id="phototext">사진 설명</span>
-                                        <input type="text" class="form-control" aria-label="Sizing example input"
-                                            aria-describedby="inputGroup-sizing-lg">
+                                        <span class="input-group-text">사진 설명</span>
+                                        <input id="phototext" type="text" class="form-control"
+                                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                                     </div>
                                     <div class="input-group input-group-lg">
-                                        <span class="input-group-text" id="photourl">사진 주소</span>
-                                        <input type="text" class="form-control" aria-label="Sizing example input"
-                                            aria-describedby="inputGroup-sizing-lg">
+                                        <span class="input-group-text">사진 주소</span>
+                                        <input id="photourl" type="text" class="form-control"
+                                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                                     </div>
 
 
-                                    <button type="button" class="btn btn-secondary btn-lg" id="postingbtn">사진
-                                        저장</button>
+                                    <button onclick="makecard()" type="button" class="btn btn-secondary btn-lg"
+                                        id="postingbtn">사진 저장</button>
                                 </div>
 
 
@@ -269,8 +271,8 @@
                     <div>
                         <div class="mytable">아래 가장 큰 박스
 
-                            <div class="mycards" id="cardbox">
-                                <div class="row row-cols-1 row-cols-md-5 g-4">
+                            <div class="mycards">
+                                <div id="cardbox" class="row row-cols-1 row-cols-md-5 g-4">
                                     <div class="col">
                                         <div class="card">
                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qZWshUtWFqWd2v-rHlaCf3Ju3RINpg7HpA&s"
@@ -356,6 +358,7 @@
         <script type="module" src="js/fcKoTime.js"></script>
         <script type="module" src="js/FirestoreDB.js"></script>
         <script src="js/member.js"></script>
+        <script src="js/photo.js"></script>
 
 
 </body>
