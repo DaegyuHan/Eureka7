@@ -1,3 +1,9 @@
+* {
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .visitor-main {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
