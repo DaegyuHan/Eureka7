@@ -1,7 +1,8 @@
 
-$("#togglebtn").click(async function () {
+$('#togglebtn').click(async function () {
     $('#cardbox').toggle();
 })
+
 
 function makecard() {
 
