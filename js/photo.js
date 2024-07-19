@@ -1,9 +1,9 @@
 
-(document).ready(function() {
+
     $("#togglebtn").click(function() {
         $('#cardbox').toggle();
     });
-});
+
 
 
 function makecard() {
